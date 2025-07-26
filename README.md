@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✍️ PenCraft - Advanced Blogging Platform
 
 A comprehensive **MERN Stack** blogging platform with WebGL effects, advanced authentication, community features, real-time interactions, and modern responsive UI design.
@@ -605,3 +606,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **⭐ If you find this project helpful, please give it a star on GitHub!**
 
 **PenCraft** - Where stories come to life ✨ 
+=======
+# PenCraft-Blogging-Platform
+>>>>>>> d1e3baf69bb4eacb1fc7bfd5d41396ce22a23b84
