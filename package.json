@@ -1,0 +1,25 @@
+{
+  "name": "pencraft-blog",
+  "version": "1.0.0",
+  "description": "Advanced Blogging Platform with WebGL Effects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && npm run resolve && cd frontend && npm install && cd ../backend && npm install",
+    "resolve": "npx npm-force-resolutions",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["blog", "mern", "react", "nodejs", "mongodb", "webgl"],
+  "author": "PenCraft Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "lodash": "^4.17.21"
+  }
+}

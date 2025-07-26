@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Glassmorphism card */
+.card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-xl;
+}
+
+/* Focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-gray-600 to-gray-700 text-white px-6 py-3 rounded-lg font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-105;
+}
+
+/* Input styles */
+.input-field {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent;
+}
+
+/* Text styles */
+.text-gradient {
+  @apply bg-gradient-to-r from-gray-300 to-white bg-clip-text text-transparent;
+}
+
+/* React Quill Dark Theme */
+.ql-container {
+  background: transparent !important;
+  border: none !important;
+  font-family: inherit !important;
+  font-size: 16px !important;
+  min-height: 200px !important;
+}
+
+.ql-editor {
+  color: white !important;
+  background: transparent !important;
+  min-height: 200px !important;
+  padding: 16px !important;
+}
+
+.ql-editor.ql-blank::before {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-style: normal !important;
+}
+
+.ql-toolbar {
+  background: rgba(31, 41, 55, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-bottom: none !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-top: none !important;
+  border-radius: 0 0 8px 8px !important;
+}
+
+.ql-toolbar .ql-stroke {
+  stroke: white !important;
+}
+
+.ql-toolbar .ql-fill {
+  fill: white !important;
+}
+
+.ql-toolbar .ql-picker {
+  color: white !important;
+}
+
+.ql-toolbar .ql-picker-options {
+  background: rgba(31, 41, 55, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+}
+
+.ql-toolbar .ql-picker-item {
+  color: white !important;
+}
+
+.ql-toolbar .ql-picker-label {
+  color: white !important;
+}
+
+.ql-toolbar button:hover .ql-stroke,
+.ql-toolbar button:focus .ql-stroke {
+  stroke: #3b82f6 !important;
+}
+
+.ql-toolbar button:hover .ql-fill,
+.ql-toolbar button:focus .ql-fill {
+  fill: #3b82f6 !important;
+}
+
+.ql-toolbar button:hover,
+.ql-toolbar button:focus {
+  color: #3b82f6 !important;
+}
+
+.ql-toolbar .ql-active .ql-stroke {
+  stroke: #3b82f6 !important;
+}
+
+.ql-toolbar .ql-active .ql-fill {
+  fill: #3b82f6 !important;
+}
+
+.ql-toolbar .ql-active {
+  color: #3b82f6 !important;
+} 
