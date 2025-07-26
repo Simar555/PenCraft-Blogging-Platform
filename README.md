@@ -302,49 +302,48 @@ npm start
 
 ---
 
-## 📂 Detailed Project Structure
-
+```
 PenCraft/
-├── 📁 backend/                            # Backend Application
-│   ├── 📁 controllers/                   # Business Logic Controllers
-│   │   ├── 📄 authController.js         # Handles registration & login
-│   │   ├── 📄 blogController.js         # Blog creation, updates
-│   │   ├── 📄 communityController.js    # Community operations
-│   │   └── 📄 userController.js         # Profile & user management
-│   ├── 📁 models/                        # Mongoose Schemas
-│   │   ├── 📄 User.js
-│   │   ├── 📄 Blog.js
-│   │   ├── 📄 Community.js
-│   │   └── 📄 Notification.js
-│   ├── 📁 routes/                        # API Endpoints
-│   │   ├── 📄 auth.js
-│   │   ├── 📄 blogs.js
-│   │   ├── 📄 communities.js
-│   │   └── 📄 users.js
-│   ├── 📁 middleware/                   # Auth, error handling, etc.
-│   │   ├── 📄 authMiddleware.js
-│   │   └── 📄 errorHandler.js
-│   ├── 📁 utils/                         # Helper functions
-│   │   └── 📄 upload.js
-│   ├── 📄 .env                           # Environment variables
-│   ├── 📄 index.js                       # Server entry point
-│   └── 📄 package.json                   # Backend dependencies
-├── 📁 frontend/                          # Frontend Application
-│   ├── 📁 src/                           # Source Code
-│   │   ├── 📁 components/
-│   │   ├── 📁 pages/
-│   │   ├── 📁 contexts/
-│   │   ├── 📁 services/
-│   │   ├── 📁 store/
-│   │   └── 📁 utils/
-│   ├── 📄 tailwind.config.js
-│   ├── 📄 package.json
+├── backend/                # Backend Application
+│   ├── controllers/        # Business Logic Controllers
+│   │   ├── authController.js       # Handles registration & login
+│   │   ├── blogController.js       # Blog creation, updates
+│   │   ├── communityController.js  # Community operations
+│   │   └── userController.js       # Profile & user management
+│   ├── models/             # Mongoose Schemas
+│   │   ├── User.js
+│   │   ├── Blog.js
+│   │   ├── Community.js
+│   │   └── Notification.js
+│   ├── routes/             # API Endpoints
+│   │   ├── auth.js
+│   │   ├── blogs.js
+│   │   ├── communities.js
+│   │   └── users.js
+│   ├── middleware/         # Auth, error handling, etc.
+│   │   ├── authMiddleware.js
+│   │   └── errorHandler.js
+│   ├── utils/              # Helper functions
+│   │   └── upload.js
+│   ├── .env                # Environment variables
+│   ├── index.js            # Server entry point
+│   └── package.json        # Backend dependencies
+├── frontend/               # Frontend Application
+│   ├── src/                # Source Code
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── contexts/
+│   │   ├── services/
+│   │   ├── store/
+│   │   └── utils/
+│   ├── tailwind.config.js
+│   ├── package.json
 │   └── ...
-├── 📄 start-project.bat                  # Windows startup script
-├── 📄 .gitignore
-├── 📄 README.md
-└── 📄 LEARNING-GUIDE.md
-
+├── start-project.bat       # Windows startup script
+├── .gitignore
+├── README.md
+└── LEARNING-GUIDE.md
+```
 
 ---
 
