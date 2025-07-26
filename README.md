@@ -301,48 +301,82 @@ npm start
 - **Modern UI**: Card-based design with glassmorphism
 
 ---
-
 ```
 PenCraft/
-├── backend/                # Backend Application
-│   ├── controllers/        # Business Logic Controllers
-│   │   ├── authController.js       # Handles registration & login
-│   │   ├── blogController.js       # Blog creation, updates
-│   │   ├── communityController.js  # Community operations
-│   │   └── userController.js       # Profile & user management
-│   ├── models/             # Mongoose Schemas
-│   │   ├── User.js
-│   │   ├── Blog.js
-│   │   ├── Community.js
-│   │   └── Notification.js
-│   ├── routes/             # API Endpoints
-│   │   ├── auth.js
-│   │   ├── blogs.js
-│   │   ├── communities.js
-│   │   └── users.js
-│   ├── middleware/         # Auth, error handling, etc.
-│   │   ├── authMiddleware.js
-│   │   └── errorHandler.js
-│   ├── utils/              # Helper functions
-│   │   └── upload.js
-│   ├── .env                # Environment variables
-│   ├── index.js            # Server entry point
-│   └── package.json        # Backend dependencies
-├── frontend/               # Frontend Application
-│   ├── src/                # Source Code
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── contexts/
-│   │   ├── services/
-│   │   ├── store/
-│   │   └── utils/
-│   ├── tailwind.config.js
-│   ├── package.json
-│   └── ...
-├── start-project.bat       # Windows startup script
-├── .gitignore
-├── README.md
-└── LEARNING-GUIDE.md
+├── 📁 backend/                            # Backend Application
+│   ├── 📁 src/                            # Source Code
+│   │   ├── 📄 index.js                    # Main server file
+│   │   └── 📁 routes/                     # API Routes
+│   │       ├── 📄 auth.js                 # Authentication endpoints
+│   │       ├── 📄 blogs.js                # Blog management endpoints
+│   │       ├── 📄 communities.js          # Community endpoints
+│   │       └── 📄 users.js                # User management endpoints
+│   ├── 📁 controllers/                    # Business Logic Controllers
+│   │   ├── 📄 authController.js           # Handles registration & login
+│   │   ├── 📄 blogController.js           # Blog creation, updates
+│   │   ├── 📄 communityController.js      # Community operations
+│   │   └── 📄 userController.js           # Profile & user management
+│   ├── 📁 models/                         # Mongoose Schemas
+│   │   ├── 📄 User.js
+│   │   ├── 📄 Blog.js
+│   │   ├── 📄 Community.js
+│   │   └── 📄 Notification.js
+│   ├── 📁 middleware/                     # Middleware functions
+│   │   ├── 📄 authMiddleware.js
+│   │   └── 📄 errorHandler.js
+│   ├── 📁 utils/                          # Utility helpers
+│   │   └── 📄 upload.js
+│   ├── 📄 .env                            # Environment variables
+│   └── 📄 package.json                    # Backend dependencies
+├── 📁 frontend/                           # Frontend Application
+│   ├── 📁 src/                            # Source Code
+│   │   ├── 📄 App.jsx                     # Main app component
+│   │   ├── 📄 index.js                    # React entry point
+│   │   ├── 📁 components/                 # Reusable Components
+│   │   │   ├── 📁 common/                 # Common Components
+│   │   │   │   ├── 📄 Galaxy.jsx          # WebGL galaxy effect
+│   │   │   │   ├── 📄 MagicBackground.jsx # Animated background
+│   │   │   │   ├── 📄 Particles.jsx       # Particle system
+│   │   │   │   ├── 📄 Particles.css       # Particle styling
+│   │   │   │   ├── 📄 TargetCursor.jsx    # Custom cursor
+│   │   │   │   ├── 📄 Notifications.jsx   # Notification system
+│   │   │   │   └── 📄 ProtectedRoute.jsx  # Route protection
+│   │   │   └── 📁 layout/                 # Layout Components
+│   │   │       ├── 📄 Layout.jsx          # Main layout wrapper
+│   │   │       └── 📄 Navbar.jsx          # Navigation component
+│   │   ├── 📁 pages/                      # Page Components
+│   │   │   ├── 📄 Home.jsx                # Landing page
+│   │   │   ├── 📄 Explore.jsx             # Content discovery
+│   │   │   ├── 📄 Communities.jsx         # Community listing
+│   │   │   ├── 📄 CreateCommunity.jsx     # Community creation
+│   │   │   ├── 📄 Profile.jsx             # User profile
+│   │   │   ├── 📄 Settings.jsx            # User settings
+│   │   │   ├── 📄 Notifications.jsx       # Notification center
+│   │   │   ├── 📄 SavedPosts.jsx          # Saved content
+│   │   │   ├── 📄 Search.jsx              # Search functionality
+│   │   │   ├── 📁 auth/                   # Authentication Pages
+│   │   │   │   ├── 📄 Login.jsx           # Login interface
+│   │   │   │   └── 📄 Register.jsx        # Registration interface
+│   │   │   └── 📁 blog/                   # Blog Pages
+│   │   │       ├── 📄 BlogPost.jsx        # Blog post view
+│   │   │       └── 📄 CreatePost.jsx      # Blog creation
+│   │   ├── 📁 contexts/                   # React Contexts
+│   │   │   └── 📄 ThemeContext.jsx        # Theme management
+│   │   ├── 📁 services/                   # API Services
+│   │   │   └── 📄 api.js                  # API configuration
+│   │   ├── 📁 store/                      # State Management
+│   │   │   └── 📄 index.js                # Redux store
+│   │   └── 📁 utils/                      # Utility Functions
+│   │       └── 📄 colors.js               # Color utilities
+│   ├── 📄 package.json                    # Frontend dependencies
+│   ├── 📄 tailwind.config.js              # Tailwind configuration
+│   ├── 📄 postcss.config.js               # PostCSS configuration
+│   └── 📄 tsconfig.json                   # TypeScript configuration
+├── 📄 package.json                        # Root package configuration
+├── 📄 start-project.bat                   # One-click startup (Windows)
+├── 📄 .gitignore                          # Git ignore rules
+├── 📄 README.md                           # Project documentation
+└── 📄 LEARNING-GUIDE.md                   # Learning resource
 ```
 
 ---
